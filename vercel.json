@@ -1,0 +1,17 @@
+{
+	"version": 2,
+	"rewrites": [
+		{
+			"source": "/",
+			"destination": "/index.html"
+		},
+		{
+			"source": "/api/(.*)",
+			"destination": "/api/:splat"
+		},
+		{
+			"source": "/(.*)",
+			"destination": "/index.html"
+		}
+	]
+}
